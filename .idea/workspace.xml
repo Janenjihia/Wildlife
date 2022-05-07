@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7073e4c9-386d-4433-9e17-5bde21ad7c0b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/models/EndangaredAnimalTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/EndangeredAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/EndangeredAnimal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Sighting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Sighting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/EndangeredAnimalTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/SightingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/SightingTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="7073e4c9-386d-4433-9e17-5bde21ad7c0b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

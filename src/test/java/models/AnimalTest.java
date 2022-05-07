@@ -1,8 +1,9 @@
 package models;
 
 import org.junit.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
+import org.sql2o.*;
+
 
 class AnimalTest {
     Animal testAnimal = new Animal("simba", "healthy","newborn");
@@ -24,6 +25,18 @@ public void animal_instantiatesCorrectly_true() {
     @Test
     public void getAge_animalInstantiatesWithAge_String() {
         assertEquals("newborn", testAnimal.getAge());
+    }
+    @Test
+    public void setName_animalInstantiatesWithName_simba() {
+        assertEquals("simba", testAnimal.setName());
+    }
+    @Test
+    public void setHealth_animalInstantiatesWithHealth_String() {
+        assertEquals("healthy", testAnimal.setHealth());
+    }
+    @Test
+    public void setAge_animalInstantiatesWithAge_String() {
+        assertEquals("newborn", testAnimal.setAge());
     }
     @Test
     public void equals_returnsTrueIfNameAndHealthAndAgeAreSame_true() {

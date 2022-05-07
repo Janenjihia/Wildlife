@@ -33,5 +33,16 @@ public class Animal {
         return age;
     }
 
+    public String setName() {
+        return name;
+    }
+
+    public String setHealth() {
+        return health;
+    }
+
+    public String setAge() {
+        return age;
+    }
 }
 

@@ -1,6 +1,10 @@
 package models;
 
 
+import org.sql2o.Connection;
+
+import java.util.List;
+
 public class Animal {
     private final String name;
     private final String health;
@@ -44,5 +48,14 @@ public class Animal {
     public String setAge() {
         return age;
     }
-}
 
+
+//DB
+
+    public static List<String> allAnimalNames() {
+        try (Connection con = DB.sql2o.open()) {
+            return con.createQuery("SELECT name FROM animals")
+                    .executeAndFetch(String.class);
+        }
+    }
+}

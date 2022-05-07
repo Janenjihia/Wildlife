@@ -8,7 +8,7 @@ import java.util.List;
 @SuppressWarnings("ALL")
 
 
-public class Animal {
+public abstract class Animal {
     private String name;
     private  String health;
     private  String age;
@@ -23,8 +23,6 @@ public class Animal {
 
     }
 
-
-
     @Override
     public boolean equals(Object otherAnimal) {
         if (this == otherAnimal) return true;
@@ -32,8 +30,11 @@ public class Animal {
         Animal newAnimal = (Animal) otherAnimal;
         return  this.getName().equals(newAnimal.getName()) &&
                 this.getName().equals(newAnimal.getName()) &&
-                this.getAge().equals(newAnimal.getAge());
+                this.getAge().equals(newAnimal.getAge()) &&
+                this.getType().equals(newAnimal.getType());
     }
+
+
     public String getName() {
         return name;
 

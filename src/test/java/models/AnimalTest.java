@@ -47,11 +47,17 @@ public void animal_instantiatesCorrectly_true() {
         assertTrue(firstAnimal.equals(anotherAnimal));
     }
 
-    @Test
-    public void save_assignsIdToObject() {
-        testAnimal.save();
-        Animal savedAnimal = all().get(0);
-        assertEquals(testAnimal.getId(), savedAnimal.getId());
-    }
+//    @Test
+//    public void save_assignsIdToObject() {
+//        testAnimal.save();
+//        Animal savedAnimal = all().get(0);
+//        assertEquals(testAnimal.getId(), savedAnimal.getId());
+//    }
+// @Test
+//    public void save_assignsIdToObject() {
+//        testAnimal.save();
+//        Animal savedAnimal = all().get(0);
+//        assertEquals(testAnimal.getId(), savedAnimal.getId());
+//    }
 
 }

@@ -1,10 +1,12 @@
 package models;
+
+import models.EndangeredAnimal;
 import org.junit.Rule;
 import org.junit.Test;
-import static org.junit.jupiter.api.Assertions.*;
 
-class EndangeredAnimalTest {
-    EndangaredAnimal endangaredAnimal= new EndangaredAnimal("matata","Healthy","Young");
+import static org.junit.Assert.*;
+
+public class EndangeredAnimalTest {
     @Rule
     public DatabaseRule databaseRule = new DatabaseRule();
 
@@ -13,9 +15,9 @@ class EndangeredAnimalTest {
     }
 
     @Test
-    public void EndangeredAnimal_instantiatesCorrectly_true() {
-        EndangaredAnimal endangaredAnimal= new EndangaredAnimal("matata","Healthy","Young");
-        assertEquals(true, endangaredAnimal instanceof EndangaredAnimal);
+    public void animal_instantiatesCorrectly_true(){
+        EndangeredAnimal endangeredAnimal = newAnimal();
+        assertTrue(endangeredAnimal instanceof EndangeredAnimal);
     }
 
     @Test

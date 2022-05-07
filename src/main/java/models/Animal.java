@@ -8,7 +8,7 @@ import java.util.List;
 @SuppressWarnings("ALL")
 
 
-public abstract class Animal {
+public class Animal {
     private String name;
     private  String health;
     private  String age;

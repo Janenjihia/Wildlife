@@ -13,10 +13,14 @@ public class Animal {
     private  String health;
     private  String age;
     private int id;
+    private String type;
+
     public Animal(String name, String health, String age) {
         this.name=name;
         this.health=health;
         this.age=age;
+        this.type=type;
+
     }
 
 
@@ -51,6 +55,12 @@ public class Animal {
         return health;
     }
 
+    public String setType() {
+        return type;
+    }
+    public String getType() {
+        return type;
+    }
     public String setAge() {
         return age;
     }

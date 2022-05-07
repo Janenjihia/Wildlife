@@ -7,4 +7,7 @@ class EndangaredAnimalTest {
     @Rule
     public DatabaseRule databaseRule = new DatabaseRule();
 
+    private EndangeredAnimal newAnimal() {
+        return new EndangeredAnimal("Goat","Healthy","Young");
+    }
 }

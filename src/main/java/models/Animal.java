@@ -11,6 +11,15 @@ public class Animal {
         this.age=age;
 
     }
+    @Override
+    public boolean equals(Object otherAnimal) {
+        if (this == otherAnimal) return true;
+        if (otherAnimal == null || getClass() != otherAnimal.getClass()) return false;
+        Animal newAnimal = (Animal) otherAnimal;
+        return  this.getName().equals(newAnimal.getName()) &&
+                this.getName().equals(newAnimal.getName()) &&
+                this.getAge().equals(newAnimal.getAge());
+    }
     public String getName() {
         return name;
 

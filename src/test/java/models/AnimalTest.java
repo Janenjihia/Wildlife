@@ -1,6 +1,8 @@
 package models;
 
 import org.junit.Test;
+
+import static models.Animal.*;
 import static org.junit.jupiter.api.Assertions.*;
 import org.sql2o.*;
 
@@ -43,6 +45,13 @@ public void animal_instantiatesCorrectly_true() {
         Animal firstAnimal = new Animal("simba", "healthy","newborn");
         Animal anotherAnimal = new Animal("tinga", "healthy","adult");
         assertTrue(firstAnimal.equals(anotherAnimal));
+    }
+
+    @Test
+    public void save_assignsIdToObject() {
+        testAnimal.save();
+        Animal savedAnimal = all().get(0);
+        assertEquals(testAnimal.getId(), savedAnimal.getId());
     }
 
 }

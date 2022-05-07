@@ -2,19 +2,25 @@ package models;
 
 
 import org.sql2o.Connection;
+import org.sql2o.Sql2oException;
 
 import java.util.List;
+@SuppressWarnings("ALL")
+
 
 public class Animal {
-    private final String name;
-    private final String health;
-    private final String age;
+    private String name;
+    private  String health;
+    private  String age;
+    private int id;
     public Animal(String name, String health, String age) {
         this.name=name;
         this.health=health;
         this.age=age;
-
     }
+
+
+
     @Override
     public boolean equals(Object otherAnimal) {
         if (this == otherAnimal) return true;
@@ -48,6 +54,13 @@ public class Animal {
     public String setAge() {
         return age;
     }
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
 
 //DB
@@ -56,6 +69,20 @@ public class Animal {
         try (Connection con = DB.sql2o.open()) {
             return con.createQuery("SELECT name FROM animals")
                     .executeAndFetch(String.class);
+        }
+    }
+
+    public void save(){
+        try(Connection con = DB.sql2o.open()) {
+            String sql = "INSERT INTO animals(name,health, age, type) values (:name,:health,:age,:type)";
+            this.id = (int) con.createQuery(sql,true)
+                    .addParameter("name", this.name)
+                    .addParameter("health", this.health)
+                    .addParameter("age",this.age)
+                    .executeUpdate()
+                    .getKey();
+        }catch (Sql2oException ex) {
+            System.out.println(ex);
         }
     }
 }

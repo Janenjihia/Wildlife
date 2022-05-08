@@ -11,5 +11,9 @@ class RangerTest {
         return new Ranger("Mwangi");
     }
 
-
+    @Test
+    public void ranger_instantiatesCorrectly(){
+        Ranger ranger = newRanger();
+        assertTrue(ranger instanceof Ranger);
+    }
 }

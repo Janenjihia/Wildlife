@@ -28,4 +28,13 @@ class RangerTest {
         ranger.save();
         assertNotEquals(idBefore,ranger.getId());
     }
+    @Test
+    public void all_getAllRangers(){
+        Ranger ranger = newRanger();
+        Ranger ranger1 = new Ranger("Stark");
+        ranger.save();
+        ranger1.save();
+        assertTrue(Ranger.all().contains(ranger));
+        assertTrue(Ranger.all().contains(ranger1));
+    }
 }

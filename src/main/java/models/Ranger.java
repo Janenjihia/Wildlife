@@ -3,6 +3,7 @@ package models;
 import org.sql2o.Connection;
 import org.sql2o.Sql2oException;
 
+import java.util.Collection;
 import java.util.List;
 import java.util.Objects;
 
@@ -10,6 +11,9 @@ public class Ranger {
 
     private final String name;
     private  int id;
+
+
+
     @Override
     public boolean equals(Object Ranger) {
         if (this == Ranger) return true;
@@ -45,4 +49,13 @@ public class Ranger {
                 System.out.println(ex);
             }
         }
+    public List<Sighting> mySightings(){
+        String sql = "SELECT * FROM sightings WHERE rangerid=:id";
+        try(Connection con = DB.sql2o.open()){
+            return con.createQuery(sql)
+                    .addParameter("id",this.id)
+                    .executeAndFetch(Sighting.class);
+        }
     }
+
+}

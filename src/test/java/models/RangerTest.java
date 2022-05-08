@@ -16,4 +16,16 @@ class RangerTest {
         Ranger ranger = newRanger();
         assertTrue(ranger instanceof Ranger);
     }
+    @Test
+    public void getName_returnRangerName_true(){
+        Ranger ranger = newRanger();
+        assertEquals("Mwangi",ranger.getName());
+    }
+    @Test
+    public void save_getRangerId(){
+        Ranger ranger = newRanger();
+        int idBefore = ranger.getId();
+        ranger.save();
+        assertNotEquals(idBefore,ranger.getId());
+    }
 }

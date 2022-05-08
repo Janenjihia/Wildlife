@@ -57,5 +57,11 @@ public class Ranger {
                     .executeAndFetch(Sighting.class);
         }
     }
-
+    public void delete(){
+        try(Connection con = DB.sql2o.open()){
+            con.createQuery("DELETE FROM rangers WHERE id=:id")
+                    .addParameter("id",this.id)
+                    .executeUpdate();
+        }
+    }
 }

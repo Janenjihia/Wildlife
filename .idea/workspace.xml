@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7073e4c9-386d-4433-9e17-5bde21ad7c0b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/models/Ranger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Ranger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/RangerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/RangerTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

@@ -1,6 +1,10 @@
 package models;
 
-import org.testng.annotations.Test;
+import org.sql2o.Connection;
+import org.sql2o.Sql2oException;
+
+import java.util.List;
+import java.util.Objects;
 
 public class Ranger {
 
@@ -26,4 +30,19 @@ public class Ranger {
     public Integer getId() {
         return id;
     }
-}
+
+
+//DB
+
+    public void save() {
+            String sql = "INSERT INTO rangers(name) VALUES(:name)";
+            try (Connection con = DB.sql2o.open()) {
+                this.id = (int) con.createQuery(sql, true)
+                        .addParameter("name", this.name)
+                        .executeUpdate()
+                        .getKey();
+            } catch (Sql2oException ex) {
+                System.out.println(ex);
+            }
+        }
+    }

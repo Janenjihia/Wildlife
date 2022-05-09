@@ -87,7 +87,7 @@ public class App {
         return new ModelAndView(model,"sighting-locations.hbs");
     },new HandlebarsTemplateEngine());
 
-    //sightings by location
+//    sightings by location
 
     get("/sightings/:location/details",(request, response) -> {
         Map<String, Object> model = new HashMap<>();
@@ -96,5 +96,14 @@ public class App {
         model.put("sightings", Sighting.getAllSightingsInLocation(filter));
         return new ModelAndView(model,"sighting-locations-details.hbs");
     },new HandlebarsTemplateEngine());
+
+//    all rangers
+    get("/rangers",(request, response) -> {
+        Map<String, Object> model = new HashMap<>();
+        model.put("rangers", Ranger.all());
+        return new ModelAndView(model,"all-rangers.hbs");
+    },new HandlebarsTemplateEngine());
+
+//
     }
 

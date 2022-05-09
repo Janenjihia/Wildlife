@@ -44,7 +44,7 @@ public class Sighting {
     public int getId() {
         return getId();
     }
-}
+
 
 
 //DB

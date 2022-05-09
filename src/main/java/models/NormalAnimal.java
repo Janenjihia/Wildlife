@@ -36,9 +36,9 @@ public class NormalAnimal  {
     public String getType() {
         return DB_TYPE;
     }
-    public short getId() {
-        return id;
-    }
+//    public short getId() {
+//        return id;
+//    }
 
 //    db
 

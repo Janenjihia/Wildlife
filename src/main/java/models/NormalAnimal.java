@@ -16,4 +16,19 @@ public class NormalAnimal  {
 
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public String getHealth() {
+        return health;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    public String getType() {
+        return DB_TYPE;
+    }
 }

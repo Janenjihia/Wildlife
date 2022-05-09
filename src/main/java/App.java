@@ -17,12 +17,23 @@ public class App {
 
     }
 
-        //get: Homepage
+        //route route
+
+
         get("/",(request, response) -> {
             Map<String, Object> model = new HashMap<>();
             List<Sighting> allSightings = Sighting.all();
             model.put("sightings", allSightings);
             return new ModelAndView(model,"index.hbs");
         },new HandlebarsTemplateEngine());
+
+//     endangered animals
+
+
+    get("/animals/endangered",(request, response) -> {
+        Map<String, Object> model = new HashMap<>();
+        model.put("endangered", EndangeredAnimal.all());
+        return new ModelAndView(model,"endangered-animals.hbs.hbs");
+    },new HandlebarsTemplateEngine());
     }
 

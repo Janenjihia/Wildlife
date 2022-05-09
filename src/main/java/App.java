@@ -86,6 +86,11 @@ public class App {
         return new ModelAndView(model,"sighting-locations.hbs");
     },new HandlebarsTemplateEngine());
 
-
+    //get: retrieve all sightings by location
+    get("/sightings",(request, response) -> {
+        Map<String, Object> model = new HashMap<>();
+        model.put("sightings", Sighting.all());
+        return new ModelAndView(model,"sighting-locations.hbs");
+    },new HandlebarsTemplateEngine());
     }
 

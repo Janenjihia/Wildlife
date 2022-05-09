@@ -8,6 +8,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import static spark.SparkBase.port;
+import static spark.SparkBase.staticFileLocation;
+
 public class App {
 
     public static void main(String[] args) {
@@ -108,9 +111,19 @@ public class App {
     get("/rangers",(request, response) -> {
         Map<String, Object> model = new HashMap<>();
         model.put("rangers", Ranger.all());
-        return new ModelAndView(model,"all-rangers.hbs");
+        return new ModelAndView(model,"rangers.hbs");
     },new HandlebarsTemplateEngine());
 
-//
+//rangers details
+get("/rangers/:id/details",(request, response) -> {
+        Map<String, Object> model = new HashMap<>();
+        int id = Integer.parseInt(request.params("id"));
+        Ranger foundRanger = Ranger.find(id);
+        List<Sighting> mySightings = foundRanger.mySightings();
+        model.put("ranger",foundRanger);
+        model.put("sightings",mySightings);
+        return new ModelAndView(model,"ranger-details.hbs");
+    },new HandlebarsTemplateEngine());
+
     }
 

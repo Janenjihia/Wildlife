@@ -35,5 +35,14 @@ public class App {
         model.put("endangered", EndangeredAnimal.all());
         return new ModelAndView(model,"endangered-animals.hbs.hbs");
     },new HandlebarsTemplateEngine());
+
+//    non-endangeredanimals
+
+
+    get("/animals/normal",(request, response) -> {
+        Map<String, Object> model = new HashMap<>();
+        model.put("normal", NormalAnimal.all());
+        return new ModelAndView(model,"normal-animals.hbs");
+    },new HandlebarsTemplateEngine());
     }
 

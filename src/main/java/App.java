@@ -44,5 +44,15 @@ public class App {
         model.put("normal", NormalAnimal.all());
         return new ModelAndView(model,"normal-animals.hbs");
     },new HandlebarsTemplateEngine());
+
+    // New Sighting Form
+
+    get("/sighting/new",(request, response) -> {
+        Map<String, Object> model = new HashMap<>();
+        model.put("sightings", Sighting.all());
+        return new ModelAndView(model,"sighting-form.hbs");
+    },new HandlebarsTemplateEngine());
+
+
     }
 

@@ -44,7 +44,7 @@ Project open to further development
 <li>HTML + Handlebars</li>
 <li>Css</li>
 <li>Java</li>
-<li>Gradle</li>
+<li>Maven</li>
 <li>Spark</li>
 <li>Junit for testing</li>
 <li>PostgreSQL for data storage</li>

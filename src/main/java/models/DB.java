@@ -1,9 +1,10 @@
 package models;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.sql2o.Sql2o;
 import java.net.URI;
 import java.net.URISyntaxException;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class DB {
 //    public static Sql2o sql2o = new Sql2o("jdbc:postgresql://localhost:5432/virtual_pets", null, null);
@@ -32,4 +33,4 @@ public class DB {
 
     }
 }
-}
+

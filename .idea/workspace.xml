@@ -5,8 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7073e4c9-386d-4433-9e17-5bde21ad7c0b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/public/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/public/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/DB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Ranger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Ranger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Sighting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Sighting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/public/Images/Rhino.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Images/Rhino.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/public/Images/Tiger.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Images/Tiger.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/public/Images/howler-monkey.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Images/howler-monkey.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/public/Images/leo.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Images/leo.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/models/DatabaseRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/DatabaseRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/rangers.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/rangers.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,22 +47,33 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
+        <option name="localRepository" value="$MAVEN_REPOSITORY$" />
+        <option name="userSettingsFile" value="$USER_HOME$/.m2/settings.xml" />
         <option name="workOffline" value="true" />
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectId" id="28qMg8dPgminD2VbOEKp3k1MQMb" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "HbShouldOpenHtmlAsHb": "enabled",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/pcarol/IdeaProjects/wildlife-tracker"
+    "last_opened_file_path": "/home/pcarol/IdeaProjects/IPJ/WildlifeTracker",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "MavenSettings"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -74,6 +99,20 @@
       <command value="mvn clean" />
       <command value="mvn run" />
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="App" />
+      <module name="wildlife-tracker" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="showServicesTree" value="false" />
@@ -102,5 +141,23 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/models/DatabaseRule.java</url>
+          <line>12</line>
+          <properties class="models.DatabaseRule" method="after">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

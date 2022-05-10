@@ -3,13 +3,11 @@ package models;
 import org.sql2o.Connection;
 import org.sql2o.Sql2oException;
 
-import java.util.Collection;
 import java.util.List;
-import java.util.Objects;
 
 public class Ranger {
 
-    private final String name;
+    private  String name;
     private  int id;
 
 

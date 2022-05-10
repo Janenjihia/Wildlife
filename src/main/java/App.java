@@ -163,5 +163,4 @@ get("/rangers/:id/sighting/new",(request, response) -> {
 
 }
 
-}
 

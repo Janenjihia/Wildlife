@@ -5,6 +5,7 @@ import org.sql2o.Connection;
 import org.sql2o.Sql2oException;
 
 import java.util.List;
+
 @SuppressWarnings("ALL")
 
 
@@ -33,8 +34,6 @@ public class Animal {
                 this.getAge().equals(newAnimal.getAge()) &&
                 this.getType().equals(newAnimal.getType());
     }
-
-
     public String getName() {
         return name;
 
